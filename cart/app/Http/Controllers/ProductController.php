@@ -12,7 +12,7 @@ class ProductController extends Controller
 {
     //
     public function create() {
-        return view('insertProduct') ->with('categories',Category::all());;
+        return view('insertProduct') ->with('categories',Category::all());
     }
 
     public function store(){    //step 2 
@@ -114,10 +114,12 @@ class ProductController extends Controller
 
     public function autocomplete(Request $request) {
         $data = Product::select("name")
-            ->where("name","LIKE",'%'.$request->get('query').'%')
+            ->where("name","LIKE", '%'.$request->get('query').'%')
             ->get();
         return response()->json($data);
-    }​​
-}
+    }
+
+}​​
+
 
 
