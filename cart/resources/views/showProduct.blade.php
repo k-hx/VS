@@ -18,7 +18,7 @@
 		            <th>Name</th>
                     <th>Category</th>
 		            <th>Quantity</th>
-		            <th>Price</th>
+		            <th>Price (RM)</th>
                     <th>Action</th>
 		        </tr>
 		    </thead>
