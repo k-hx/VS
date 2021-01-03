@@ -91,6 +91,8 @@ Route::get('/search',[App\Http\Controllers\ProductController::class, 'index'])->
 
 Route::get('/autocomplete',[App\Http\Controllers\ProductController::class, 'autocomplete'])->name('autocomplete');
 
+Route::get('/pdfReport', [App\Http\Controllers\PDFController::class, 'pdfReport'])->name('pdfReport');
+
 //20201118 1310----------------
 //Route::get('/makePayment', [App\Http\Controllers\CategoryController::class, 'show'])->name('makePayment');
 //Route::get('/myOrder', [App\Http\Controllers\CategoryController::class, 'show'])->name('myOrder');
